@@ -6,7 +6,7 @@ test("Today's 1st Test",async function({page}) {
     
 })
 
-test.only("2nd Test",async function ({page}) {
+test("2nd Test",async function ({page}) {
     
     expect(101).toBe(101)  //For integer use > .toBe
     expect(true).toBeTruthy()
@@ -18,4 +18,7 @@ test.skip("3rd Test",async function({page}) {
     //expect(false).toBeFalsy()
     
 })
-
+test.only("4th Test",async function ({page}) {
+    
+    expect("Tweshal Dev".includes("Dev")).toBeTruthy()  //For integer use > .toBe
+})
